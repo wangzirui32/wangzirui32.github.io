@@ -12,14 +12,42 @@
             height: 100%;
         }
         body {
-            background-image: url("/bg.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            opacity: 0.8;
+            background-image: -moz-linear-gradient(180deg, rgb(158, 163, 255), rgb(158, 218, 255));
+            background-image: -webkit-linear-gradient(180deg, rgb(158, 163, 255), rgb(158, 218, 255));
+            background-image: linear-gradient(180deg, rgb(158, 163, 255), rgb(158, 218, 255));
+        }
+        nav {
+            background-image: -moz-linear-gradient(45deg, rgb(204, 255, 255), rgb(204, 229, 255));
+            background-image: -webkit-linear-gradient(45deg, rgb(204, 255, 255), rgb(204, 229, 255));
+            background-image: linear-gradient(45deg, rgb(204, 255, 255), rgb(204, 229, 255));
+        }
+        #links div {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #profile {
+            background: none;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://wangzirui32.github.io">Wangzirui32</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://blog.csdn.net/wangzirui32/category_10745800.html">Python</a></li>
+                <li><a href="https://blog.csdn.net/wangzirui32/category_11747585.html">Bootstarp</a></li>
+                <li><a href="https://github.com/wangzirui32">Github</a></li>
+                <li><a href="https://blog.csdn.net/wangzirui32">CSDN</a></li>
+                <li><a href="https://gitee.com/wangzirui32">Gitee</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
     <div class="container">
         <div class="jumbotron">
             <div class="container">
@@ -27,21 +55,29 @@
                 <p>这里是wangzirui32的个人网站，更多信息请往下继续浏览，站点由Github Pages提供！</p>
             </div>
         </div>
-        <h3>CSDN专栏文章</h3>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10745800.html">Python</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10923311.html">Python网络爬虫</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10769409.html">Python模块介绍使用</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10807102.html">HTML</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_11747585.html">Boostarp</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10812072.html">JavaScript</a></li>
-            <li class="list-group-item"><a href="https://blog.csdn.net/wangzirui32/category_10926142.html">jQuery</a></li>
-        </ul>
-        <h3>其他资源</h3>
-        <div class="links">
-            <a href="https://github.com/wangzirui32" class="btn btn-primary">Github</a>
-            <a href="https://blog.csdn.net/wangzirui32" class="btn btn-danger">CSDN</a>
-            <a href="https://gitee.com/wangzirui32" class="btn btn-warning">Gitee</a>
+        <h3>CSDN专栏文章 <small>CSDN Articles</small></h3>
+        <div class="row" id="links">
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10745800.html">Python</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10923311.html">Python网络爬虫</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10765644.html">Python番外篇</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10769409.html">Python模块介绍使用</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10807102.html">HTML</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_11747585.html">Bootstarp</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10812072.html">JavaScript</a></div>
+            <div class="col-md-3"><a href="https://blog.csdn.net/wangzirui32/category_10926142.html">jQuery</a></div>
+        </div>
+        <div id="profile" class="panel">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img style="padding-left: 10px;" src="/wangzirui32.jpg" class="img-circle"/> 
+                    </div>
+                    <div class="col-md-10">
+                        <h3>关于我 <small>About Me</small></h3>
+                        <p>本人是长期驻扎于CSDN的博主，主要学习Python开发，网络爬虫，Web开发，Bootstarp前端设计等领域。</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
